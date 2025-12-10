@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Splendide Info Service - À propos</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.7em;
+}
+
+/* ===== HEADER ===== */
+header {
+background: linear-gradient(135deg, rgba(106,17,203,0.6), rgba(37,117,252,0.6)), url("photo.jpg");
+background-size: cover;
+background-position: center;
+color: white;
+text-align: center;
+padding: 100px 20px;
+position: relative;
+overflow: hidden;
+}
+header::before {
+content: '';
+position: absolute;
+top:0; left:0; right:0; bottom:0;
+background: linear-gradient(45deg, rgba(255,255,255,0.05), rgba(0,0,0,0.15));
+pointer-events: none;
+}
+header h1 {
+font-size: 3.2em;
+margin: 0 0 15px 0;
+text-shadow: 2px 2px 12px rgba(0,0,0,0.4);
+animation: float 4s ease-in-out infinite;
+}
+header p {
+font-size: 1.4em;
+text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+}
+.header-buttons {
+margin-top: 20px;
+}
+.header-buttons a {
+background-color: white;
+color: #2575fc;
+padding: 14px 25px;
+border-radius: 30px;
+font-weight: bold;
+text-decoration: none;
+margin: 8px;
+display: inline-block;
+transition: 0.4s;
+}
+.header-buttons a:hover {
+background-color: #6a11cb;
+color: white;
+transform: translateY(-3px) scale(1.05);
+}
+
+/* ===== ANIMATION FLOAT ===== */
+@keyframes float {
+0%,100% { transform: translateY(0); }
+50% { transform: translateY(-10px); }
+}
+
+/* ===== SECTIONS ===== */
+section {
+padding: 60px 20px;
+max-width: 900px;
+margin: auto;
+background: white;
+border-radius: 15px;
+margin-bottom: 40px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+transition: transform 0.3s;
+}
+section:hover { transform: translateY(-5px); }
+h2 { margin-top: 30px; color: #2575fc; }
+ul { list-style-type: none; padding: 0; }
+ul li {
+margin: 12px 0;
+padding-left: 25px;
+position: relative;
+font-weight: 500;
+}
+ul li::before {
+content: "✔";
+position: absolute;
+left:0;
+color: #6a11cb;
+font-weight: bold;
+}
+
+/* ===== NOTICE ===== */
+.notice {
+background-color: #d0e8ff;
+padding: 20px 25px;
+margin-top: 25px;
+border-left: 6px solid #2575fc;
+font-weight: bold;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===== BOUTON RETOUR ===== */
+.return-btn {
+display: inline-block;
+margin-top: 25px;
+padding: 14px 30px;
+font-weight: bold;
+color: white;
+background: linear-gradient(135deg, #2575fc, #6a11cb);
+border-radius: 30px;
+text-decoration: none;
+transition: all 0.3s;
+}
+.return-btn:hover {
+transform: scale(1.05) translateY(-3px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ===== FOOTER ===== */
+footer {
+background-color: #6a11cb;
+color: white;
+text-align: center;
+padding: 35px 0;
+font-size: 0.95em;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+header h1 { font-size: 2.2em; }
+header p { font-size: 1.1em; }
+section { padding: 40px 15px; }
+}
+@media(max-width:480px){
+header h1 { font-size: 1.8em; }
+header p { font-size: 1em; }
+} </style>
+
+</head>
+<body>
+
+<header>
+    <h1>À propos de SIS</h1>
+    <p>Votre partenaire numérique de confiance</p>
+    <div class="header-buttons">
+    </div>
+</header>
+
+<section>
+    <h2>Qui sommes-nous ?</h2>
+    <p>
+        Splendide Info Service (SIS) est une entreprise spécialisée dans les services informatiques, la bureautique,
+        la conception graphique et l’assistance technique. Notre objectif est de fournir des solutions rapides, accessibles
+        et professionnelles aux particuliers comme aux entreprises.
+    </p>
+
+```
+<h2>Notre Mission</h2>
+<p>
+    Offrir des services informatiques fiables, modernes et adaptés aux besoins réels de nos clients, tout en garantissant
+    une qualité irréprochable et un accompagnement personnalisé.
+</p>
+
+<h2>Nos Valeurs</h2>
+<ul>
+    <li>Professionnalisme et rigueur dans chaque prestation.</li>
+    <li>Innovation continue pour proposer les meilleures solutions.</li>
+    <li>Respect, transparence et confiance avec nos clients.</li>
+    <li>Engagement dans la satisfaction totale du client.</li>
+</ul>
+
+<h2>Pourquoi choisir SIS ?</h2>
+<p>
+    Parce que nous combinons expertise, rapidité, fiabilité et prix accessibles. Nous nous engageons à transformer
+    chaque besoin en une solution efficace et durable.
+</p>
+
+<div class="notice">
+    <p><strong>Horaires d’ouverture :</strong> Lundi à Samedi de 08h00 à 18h00. Dimanche fermé.</p>
+    <p>Pour les urgences, nous répondons immédiatement si vous nous contactez.</p>
+</div>
+
+<a href="index.html" class="return-btn">Retour à l'Accueil</a>
+```
+
+</section>
+
+<footer>
+    &copy; 2025 Splendide Info Service (SIS) - Tous droits réservés
+</footer>
+
+</body>
+</html>

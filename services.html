@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Splendide Info Service - Services</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(120deg, #f0f4f8, #e0f0ff);
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+background: linear-gradient(135deg, rgba(106,17,203,0.8), rgba(37,117,252,0.8)), url("scanne.jpg");
+background-size: cover;
+background-position: center;
+color: white;
+text-align: center;
+padding: 60px 20px;
+box-shadow: inset 0 0 50px rgba(0,0,0,0.3);
+}
+header h1 {
+font-size: 2.8em;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+header h1 img {
+width: 130px;
+height: 130px;
+border-radius: 50%;
+border: 3px solid white;
+box-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
+
+/* ===== SERVICES ===== */
+section { padding: 40px 20px; text-align: center; }
+h2 { font-size: 2em; margin-bottom: 30px; color: #2575fc; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+
+.services-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+}
+
+.service-card {
+background: linear-gradient(135deg, #2575fc, #6a11cb);
+color: white;
+width: 280px;
+border-radius: 20px;
+padding: 20px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+transition: transform 0.5s, box-shadow 0.5s;
+text-align: center;
+cursor: pointer;
+perspective: 1000px;
+}
+.service-card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 15px;
+margin-bottom: 15px;
+transition: transform 0.5s;
+}
+.service-card h3 { font-size: 1.3em; margin-bottom: 10px; font-weight: bold; text-shadow: 1px 1px 4px rgba(0,0,0,0.3);}
+.service-card p { font-size: 0.95em; line-height: 1.5; }
+
+.service-card:hover {
+transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+.service-card:hover img { transform: scale(1.08) rotateZ(2deg); }
+
+/* ===== RETURN BUTTON ===== */
+.return-btn {
+display: inline-block;
+margin: 40px 0;
+padding: 15px 35px;
+border-radius: 30px;
+text-decoration: none;
+color: white;
+background: linear-gradient(135deg, #2575fc, #6a11cb);
+font-weight: bold;
+font-size: 1.1em;
+transition: transform 0.4s, background 0.4s;
+box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+.return-btn:hover {
+background: linear-gradient(135deg, #6a11cb, #2575fc);
+transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+background-color: #6a11cb;
+color: white;
+text-align: center;
+padding: 40px 0;
+font-size: 0.95em;
+letter-spacing: 0.5px;
+box-shadow: inset 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){ .service-card { width: 45%; } }
+@media(max-width:768px){ .service-card { width: 70%; } }
+@media(max-width:480px){ .service-card { width: 90%; } }
+
+</style>
+</head>
+<body>
+
+<header>
+<h1><img src="loi.png" alt="Logo SIS"> Splendide Info Service (SIS)</h1>
+</header>
+
+<section>
+<h2>NOS 18 SERVICES</h2>
+<div class="services-container">
+
+<div class="service-card"><img src="formation.webp" alt="Formation Informatique"><h3>Formation Informatique</h3><p>Apprenez Word, Excel et maintenance PC avec nos cours pratiques et interactifs pour tous niveaux.</p></div>
+
+<div class="service-card"><img src="carte.jpeg" alt="Cartes de Pointage"><h3>Cartes de Pointage</h3><p>Cartes professionnelles pour entreprises et institutions avec suivi de présence fiable et sécurisé.</p></div>
+
+<div class="service-card"><img src="photoo.jpg" alt="Photo Minute"><h3>Photo Minute</h3><p>Photos d’identité et portraits rapides avec impression de qualité immédiate.</p></div>
+
+<div class="service-card"><img src="scanne.jpg" alt="Scannage"><h3>Scannage</h3><p>Numérisation de documents et fichiers avec haute résolution pour archivage et partage sécurisé.</p></div>
+
+<div class="service-card"><img src="reluire.webp" alt="Reliure"><h3>Reliure</h3><p>Reliure professionnelle de documents, rapports et thèses avec finition soignée et durable.</p></div>
+
+<div class="service-card"><img src="airtel.jpg" alt="Airtel Money / Mobile Money"><h3>Airtel Money / Mobile Money</h3><p>Transferts, paiements et achats sécurisés via Mobile Money pour votre confort et rapidité.</p></div>
+
+<div class="service-card"><img src="reportage.avif" alt="Reportage & Photographie"><h3>Reportage & Photographie</h3><p>Captation d’événements et photos professionnelles avec montage HD et rendu époustouflant.</p></div>
+
+<div class="service-card"><img src="maintenant.webp" alt="Maintenance Informatique"><h3>Maintenance Informatique</h3><p>Diagnostic, réparation et optimisation de PC et périphériques avec assistance personnalisée.</p></div>
+
+<div class="service-card"><img src="livre.webp" alt="Conception Livres"><h3>Conception Livres</h3><p>Création de livres, brochures et documents imprimables avec mise en page professionnelle.</p></div>
+
+<div class="service-card"><img src="mise à jour .png" alt="Mise à Jour / Installations iPhone & Android"><h3>Mise à Jour / Installations iPhone & Android</h3><p>Installation, mise à jour et optimisation de vos appareils mobiles avec sauvegarde de données.</p></div>
+
+<div class="service-card"><img src="visite.jpg" alt="Carte de Visite"><h3>Carte de Visite (50 pièces)</h3><p>Conception et impression de cartes de visite élégantes pour particuliers et professionnels.</p></div>
+
+<div class="service-card"><img src="mariage.avif" alt="Cartes Mariages"><h3>Cartes Mariages</h3><p>Création de cartes d’invitation personnalisées pour mariages et événements spéciaux.</p></div>
+
+<div class="service-card"><img src="affiche.jpeg" alt="Affiches"><h3>Affiches</h3><p>Affiches publicitaires et événementielles imprimées sur matériaux de haute qualité.</p></div>
+
+<div class="service-card"><img src="bache.jpg" alt="Bâches"><h3>Bâches (1/2)</h3><p>Bâches résistantes pour publicité et événements, avec finition professionnelle et durable.</p></div>
+
+<div class="service-card"><img src="ethique.jpg" alt="Étiquettes"><h3>Étiquettes</h3><p>Étiquettes personnalisées pour produits, emballages et communication d’entreprise.</p></div>
+
+<div class="service-card"><img src="calendrier.jpg" alt="Calendriers"><h3>Calendriers</h3><p>Calendriers personnalisés avec logos et photos pour particuliers et entreprises.</p></div>
+
+<div class="service-card"><img src="carte de loyer.jpg" alt="Carnet de Loyer"><h3>Carnet de Loyer</h3><p>Carnets pratiques pour le suivi des paiements de loyers avec historique complet des locataires.</p></div>
+
+<div class="service-card"><img src="soin.avif" alt="Carnet de Soin"><h3>Carnet de Soin</h3><p>Carnets de suivi médical pour patients, enregistrant traitements, rendez-vous et historiques de santé.</p></div>
+
+</div>
+
+<a href="index.html" class="return-btn">Retour à l'Accueil</a>
+
+</section>
+
+<footer>
+&copy; 2025 Splendide Info Service (SIS) - Tous droits réservés
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paiement via WhatsApp - Splendide Info Service</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #eef2f7;
+    color: #333;
+    line-height: 1.7em;
+}
+
+/* ===== HEADER ===== */
+header {
+background: linear-gradient(135deg, #2575fc, #6a11cb);
+color: white;
+text-align: center;
+padding: 60px 20px;
+position: relative;
+overflow: hidden;
+}
+header h1 {
+margin: 0;
+font-size: 2.8em;
+animation: float 4s ease-in-out infinite;
+text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.header-buttons {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 15px;
+margin-top: 25px;
+}
+.header-buttons a {
+background-color: white;
+color: #2575fc;
+padding: 14px 28px;
+border-radius: 30px;
+font-weight: bold;
+text-decoration: none;
+transition: 0.4s;
+}
+.header-buttons a:hover {
+background-color: #6a11cb;
+color: white;
+transform: translateY(-3px) scale(1.05);
+}
+
+/* ===== FLOAT ANIMATION ===== */
+@keyframes float {
+0%,100% { transform: translateY(0); }
+50% { transform: translateY(-10px); }
+}
+
+/* ===== SECTION ===== */
+section {
+padding: 50px 20px;
+max-width: 950px;
+margin: 20px auto;
+background: #d9ecff;
+border-radius: 20px;
+box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+section:hover {
+transform: translateY(-8px);
+box-shadow: 0 18px 35px rgba(0,0,0,0.2);
+}
+h2 {
+text-align: center;
+color: #003580;
+font-size: 2em;
+margin-bottom: 20px;
+position: relative;
+}
+h2::after {
+content: '';
+display: block;
+width: 80px;
+height: 4px;
+background: #6a11cb;
+margin: 10px auto 0;
+border-radius: 2px;
+}
+ol, ul {
+max-width: 720px;
+margin: 0 auto 20px;
+padding-left: 20px;
+}
+ul li {
+position: relative;
+padding-left: 30px;
+margin: 10px 0;
+}
+ul li::before {
+content: "✔";
+position: absolute;
+left: 0;
+color: #6a11cb;
+font-weight: bold;
+}
+
+/* ===== WHATSAPP BUTTON ===== */
+a.whatsapp-btn {
+display: inline-block;
+background: linear-gradient(135deg, #25d366, #1ebe57);
+color: white;
+padding: 18px 32px;
+border-radius: 35px;
+font-weight: bold;
+text-decoration: none;
+font-size: 1.2em;
+transition: transform 0.3s, box-shadow 0.3s;
+margin-top: 25px;
+}
+a.whatsapp-btn:hover {
+transform: scale(1.08) translateY(-4px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* ===== FOOTER ===== */
+footer {
+background-color: #003580;
+color: white;
+text-align: center;
+padding: 35px 0;
+font-size: 0.95em;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+header h1 { font-size: 2.2em; }
+section { padding: 40px 15px; }
+}
+@media(max-width:480px){
+header h1 { font-size: 1.8em; }
+} </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Paiement via WhatsApp - Splendide Info Service (SIS)</h1>
+    <div class="header-buttons">
+        <a href="index.html">Accueil</a>
+    </div>
+</header>
+
+<section>
+<h2>Procédure pour effectuer un paiement via WhatsApp</h2>
+<ol>
+<li>Effectuez votre paiement par Mobile Money ou tout autre moyen disponible.</li>
+<li>Envoyez un message WhatsApp au numéro : <strong>+243 904 649 754</strong>.</li>
+<li>Indiquez dans votre message :
+<ul>
+<li>Votre nom complet</li>
+<li>Service ou produit payé</li>
+<li>Montant exact payé</li>
+<li>Date et heure du paiement</li>
+<li>Email de contact : omerphambu@gmail.com</li>
+</ul>
+</li>
+<li>Notre équipe confirmera la réception par WhatsApp ou email.</li>
+<li>En cas de problème, contactez-nous directement.</li>
+</ol>
+
+<a class="whatsapp-btn" href="https://wa.me/243904649754" target="_blank">Envoyer une alerte de paiement sur WhatsApp</a>
+
+</section>
+
+<footer>
+&copy; 2025 Splendide Info Service (SIS) - Tous droits réservés
+</footer>
+
+</body>
+</html>
